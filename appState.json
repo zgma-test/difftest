@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "DiffTest.js",
         "cursor": {
-          "lineNumber": 2,
-          "column": 5
+          "lineNumber": 1,
+          "column": 1
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -21,13 +21,81 @@
           "memory": 128,
           "layers": []
         },
-        "triggers": []
+        "triggers": [],
+        "testCases": {
+          "df1b778d-08e8-4f50-89a0-e798a71578c0": {
+            "id": "df1b778d-08e8-4f50-89a0-e798a71578c0",
+            "name": "Test event",
+            "functionId": "22aef557-fe85-4c85-92ff-b58a7892bcbe",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "61af9b21-0c86-4ca8-80d0-d98cc4665d7e": {
+        "id": "61af9b21-0c86-4ca8-80d0-d98cc4665d7e",
+        "parent": null,
+        "name": "MYPFunction.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "MYPFunction.py",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [],
+        "testCases": {
+          "ff619bff-9390-4523-9265-360865c3eeef": {
+            "id": "ff619bff-9390-4523-9265-360865c3eeef",
+            "name": "Test event",
+            "functionId": "61af9b21-0c86-4ca8-80d0-d98cc4665d7e",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "9bfc00ce-3ccf-4b12-9899-b3e231788970": {
+        "id": "9bfc00ce-3ccf-4b12-9899-b3e231788970",
+        "parent": null,
+        "name": "sub",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "b9022ce8-dbbe-4e4a-ba7e-8028b7b65caa"
+        ],
+        "isRemovable": true,
+        "filePath": "sub"
+      },
+      "b9022ce8-dbbe-4e4a-ba7e-8028b7b65caa": {
+        "id": "b9022ce8-dbbe-4e4a-ba7e-8028b7b65caa",
+        "parent": "9bfc00ce-3ccf-4b12-9899-b3e231788970",
+        "name": "util.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sub/util.js",
+        "cursor": {
+          "lineNumber": 3,
+          "column": 36
+        }
       }
     },
     "openFiles": [
-      "22aef557-fe85-4c85-92ff-b58a7892bcbe"
+      "22aef557-fe85-4c85-92ff-b58a7892bcbe",
+      "61af9b21-0c86-4ca8-80d0-d98cc4665d7e",
+      "b9022ce8-dbbe-4e4a-ba7e-8028b7b65caa"
     ],
-    "currentFileId": "22aef557-fe85-4c85-92ff-b58a7892bcbe",
+    "currentFileId": "61af9b21-0c86-4ca8-80d0-d98cc4665d7e",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -55,7 +123,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1585294063400
+    "lastSave": 1585309675424
   },
   "VCS_STATE": {
     "provider": "GitHub",

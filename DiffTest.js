@@ -1,4 +1,6 @@
 exports.handler = async (event) => {
-    
-    return {"message": "Successfully executed"};
+
+    console.log(">>>>", event);
+
+    return { "message": "Successfully executed" };
 };
